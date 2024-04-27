@@ -9,7 +9,7 @@ urlpatterns = [
     path('product/', ProductAPIView.as_view()),
     path('api/token/', TokenObtainPairView.as_view(),  name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/reg/', UserRegisterationView.as_view()),
+    path('', UserRegisterationView.as_view()),
     path('Comment/', CommentAPIView.as_view()),
 
 
